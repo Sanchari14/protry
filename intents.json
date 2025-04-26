@@ -1,0 +1,364 @@
+{
+  "intents": [
+      {
+          "tag": "greeting",
+          "patterns": [
+              "hi",
+              "hello",
+              "hey",
+              "greetings",
+              "what's up",
+              "good morning",
+              "good afternoon",
+              "good evening",
+              "hello there"
+          ],
+          "responses": [
+              "Hi there! How can I help you today?",
+              "Hello! It's good to see you. What can I do for you?",
+              "Hey! How are you feeling?",
+              "Greetings! What brings you here?",
+              "What's up? I'm here to support you.",
+              "Good morning! How can I assist you today?",
+              "Good afternoon! What can I do for you this afternoon?",
+              "Good evening! How can I help you this evening?",
+              "Hello there!  I'm here to provide support."
+          ]
+      },
+      {
+          "tag": "stress",
+          "patterns": [
+              "i am stressed",
+              "i'm feeling stressed",
+              "i'm stressed out",
+              "i'm so stressed",
+              "i'm under a lot of stress",
+              "i'm overwhelmed",
+              "this is stressful",
+              "i'm feeling pressure",
+              "i'm anxious",
+              "i'm worried",
+              "i'm having a hard time",
+              "i feel like i can't cope",
+              "i'm stressed about everything",
+              "i'm constantly stressed",
+              "i'm feeling the strain"
+          ],
+          "responses": [
+              "I understand you're feeling stressed, and I'm here to help. It's important to acknowledge these feelings. What's making you feel this way?",
+              "It sounds like you're going through a tough time. Remember, you're not alone, and I want to support you. What specific situations or thoughts are contributing to your stress?",
+              "I hear you, and it's okay to feel overwhelmed. Let's take a moment to breathe. What's the biggest challenge you're facing right now?",
+              "I sense that you're feeling stressed. To help me understand better, could you describe what a typical day has been like for you recently?",
+              "I want to acknowledge that you're feeling stressed. Can you tell me more about the specific things that are making you feel this way?",
+              "It sounds like you're carrying a heavy load of stress. I'm here to listen and help you find some ways to lighten it. What would you like to talk about?",
+              "I understand you're feeling stressed. Can you tell me more about what's going on?",
+              "It sounds like you're experiencing a lot of pressure. I'm here to help you explore what's causing this.",
+              "I hear that you're feeling anxious. That can be very difficult. What's making you feel so anxious?",
+              "It sounds like you're feeling worried. What are you worried about?",
+              "I understand you're having a hard time. I'm here to listen and offer support.",
+              "It sounds like you feel like you can't cope. That's a very difficult feeling. I want you to know that there is help available.",
+              "It sounds like you're stressed about everything.  That can be a sign of significant stress.  Let's explore some broad stress management techniques.",
+              "It sounds like you're constantly stressed.  This could be having a significant impact on your well-being.  We can work on developing some long-term coping strategies.",
+              "I understand you're feeling the strain.  It's important to address this before it becomes overwhelming.  What kind of strain are you experiencing?",
+              "I hear that you're stressed.  Try this: The 4-7-8 Breathing Technique: Inhale for 4 seconds, hold for 7, exhale for 8.  This can help regulate your nervous system.  [Link to a resource on breathing techniques]",
+              "When you're feeling stressed, sometimes grounding techniques can help.  Try the 5-4-3-2-1 method:  Name 5 things you see, 4 things you can touch, 3 things you hear, 2 things you smell, and 1 thing you can taste. [Link to grounding technique resource]"
+          ]
+      },
+      {
+          "tag": "exam_stress",
+          "patterns": [
+              "i am having exams",
+              "i'm stressed about exams",
+              "exams are causing me stress",
+              "i'm worried about my exams",
+              "exam stress",
+              "stressed about tests",
+              "i'm feeling overwhelmed by exams",
+              "i'm anxious about upcoming exams",
+              "i can't focus because of exams",
+              "i'm having trouble sleeping because of exams",
+              "i'm panicking about exams",
+              "exams are too much",
+              "i'm going to fail my exams"
+          ],
+          "responses": [
+              "I understand you're feeling stressed about exams. That's a very common experience, and I'm here to support you. Are there particular aspects of the exams that you're most worried about (e.g., fear of failure, time pressure, amount of material)?",
+              "Exams can be a significant source of stress. Let's talk about that. What specific challenges are you facing with your exams?",
+              "It sounds like you're under a lot of pressure because of your exams. I want to help you find some ways to manage that stress. Have you tried any stress-reducing techniques before?",
+              "I hear that you're having exams and that's causing you stress. Let's work together to find some ways to make this more manageable. What study habits do you currently have?",
+              "I understand. Exam stress can be overwhelming. Let's explore some strategies. Are you having trouble with a particular subject, or is it more the overall pressure?",
+              "It sounds like you're feeling overwhelmed by your exams. Let's break this down. What's the biggest source of overwhelm?",
+              "I understand you're anxious about upcoming exams. It's normal to feel some anxiety, but let's make sure it's manageable. What are you doing to prepare?",
+              "It sounds like your exams are making it hard to focus. Let's talk about some techniques to improve your concentration.",
+              "I hear that you're having trouble sleeping because of exams. Lack of sleep can make stress worse. Let's address that.",
+              "You're stressed about tests. Are you more worried about preparing for the test, or the test itself?",
+              "It sounds like you're panicking about your exams.  It's important to manage this level of anxiety.  Let's talk about some calming techniques and resources.",
+              "It sounds like exams are too much for you.  Let's break down the work and create a manageable study schedule.",
+              "It sounds like you're worried about failing your exams.  This fear can be very debilitating.  Let's work on managing this fear and focusing on what you can control.",
+              "For exam stress, time management is key. Try creating a study schedule and breaking down the material into smaller, more manageable chunks. [Link to time management resources]",
+              "Remember, adequate sleep is crucial, especially during exam periods. Aim for 7-8 hours of quality sleep. [Link to sleep hygiene tips]"
+          ]
+      },
+      {
+          "tag": "suicidal_thoughts",
+          "patterns": [
+              "i want to die",
+              "i want to kill myself",
+              "i'm thinking about suicide",
+              "i don't want to live anymore",
+              "i can't take it anymore",
+              "i'm feeling suicidal",
+              "i wish i was dead",
+              "life isn't worth living",
+              "i'm going to end it all",
+              "i feel like there's no way out",
+              "i'm better off dead",
+              "nobody cares about me",
+              "i have no reason to live"
+          ],
+          "responses": [
+              "I understand that you're going through immense pain, and I want you to know that there are people who want to support you. Your life is important, and there are ways to get through this. Please know that you're not alone.",
+              "It sounds like you're in a very dark place, and I want to help you find some light. I'm not equipped to handle this situation, but there are resources that are. Please know that you can get help.",
+              "I hear that you're having thoughts of ending your life, and that's a very serious situation. It's critical that you connect with someone who can provide immediate support.",
+              "I want to give you some very important numbers. You can connect with people who can support you by calling or texting 988 anytime in the US and Canada. In the UK, you can call 111. These services are free, confidential, and available 24/7. Please reach out to them right away.",
+              "If you are feeling unsafe, please go to your nearest emergency room or call 911 (or your local emergency number). There are people who want to help you.",
+              "I hear you. It sounds like you're in a lot of pain. Please know that there are people who want to help you, and you can get through this.",
+              "It sounds like you're feeling like there's no way out. That feeling can be overwhelming, but it's important to know that there are options and resources available.",
+              "I want you to know that you're not alone and that your life has value. Please reach out for help.",
+              "It sounds like you're going through more than you can handle right now. Please connect with someone who can support you.",
+              "I understand this is a very difficult time. Talking to someone can make a difference. Please use the resources I provided.",
+              "It sounds like you feel you'd be better off dead.  That's not true.  Your life has value, and there is help.  Please reach out.",
+              "It sounds like you feel nobody cares.  That feeling can be a symptom of depression, and it's not accurate.  There are people who want to support you.",
+              "I hear that you feel you have no reason to live.  There are resources that can help you find meaning and purpose.  Please connect with them.",
+              "If you're having thoughts of harming yourself, please know that help is available. You can connect with people who can support you by calling or texting 988 anytime in the US and Canada. In the UK, you can call 111. These services are free, confidential, and available 24/7.  Please reach out to them right away."
+          ]
+      },
+      {
+          "tag": "general_inquiry",
+          "patterns": [
+              "how are you",
+              "what is your name",
+              "tell me about yourself",
+              "what are you",
+              "who are you",
+              "what can you do",
+              "are you a therapist"
+          ],
+          "responses": [
+              "I am here to support you with stress-related concerns. How are you feeling today?",
+              "I'm a chatbot designed to provide information and support for stress management.",
+              "I'm here to listen and offer helpful resources.",
+              "I'm doing well, thank you for asking. I'm here to help you with any stress-related issues.",
+              "You can think of me as a virtual support system for managing stress.",
+              "I am a chatbot created to provide information and support.",
+              "I can provide information, suggest coping mechanisms, and direct you to helpful resources.",
+              "I am an AI and not a therapist. I can provide support and information, but I cannot provide therapy or a diagnosis. If you need professional help, please consult a qualified mental health professional.",
+              "I can offer support and suggest some general techniques. For example, have you tried mindfulness meditation? [Link to mindfulness resource]"
+          ]
+      },
+      {
+          "tag": "reading_stress",
+          "patterns": [
+              "reading book",
+              "reading",
+              "stressed while reading",
+              "reading is stressful",
+              "anxious about reading",
+              "reading gives me anxiety",
+              "i can't focus when i read",
+              "reading makes me feel overwhelmed",
+              "i get stressed trying to read"
+          ],
+          "responses": [
+              "I understand that you find reading stressful. Can you tell me more about what aspects of reading cause you stress?",
+              "Reading should be relaxing. Let's explore why it's causing you stress. Is it the content, the environment, or something else?",
+              "It sounds like you're having a negative experience with reading. Perhaps we can find some ways to make it more enjoyable and less stressful.",
+              "It sounds like reading is a source of stress for you. Is it the act of reading itself, or the material you're reading?",
+              "I understand that you feel stressed when reading. Are there any specific situations where this stress is worse?",
+              "You mentioned that reading is stressful. Have you always felt this way, or is it a recent development?",
+              "It sounds like you can't focus when you read. There are techniques that might help. Try reading in a quiet space with minimal distractions. [Link to focus techniques]",
+              "It sounds like reading makes you feel overwhelmed. Try breaking your reading into smaller chunks with breaks in between. [Link to reading strategies]",
+              "I understand you get stressed trying to read.  Perhaps audiobooks might be a less stressful alternative?  [Link to information about audiobooks]"
+          ]
+      },
+      {
+          "tag": "job_stress",
+          "patterns": [
+              "job issue",
+              "job issues",
+              "problems at work",
+              "work stress",
+              "stressed about work",
+              "work is too stressful",
+              "i hate my job",
+              "dealing with difficult coworkers",
+              "workload is overwhelming",
+              "i'm burned out",
+              "job is making me depressed",
+              "i'm having trouble with my boss"
+          ],
+          "responses": [
+              "I hear that you're having problems at work. That can be a major source of stress. Can you tell me more about the specific issues you're facing?",
+              "Work-related stress is very common. I want to help you find some ways to manage this. Are you dealing with workload, colleagues, or other factors?",
+              "It sounds like you're experiencing stress related to your job. Let's explore some coping mechanisms and potential solutions.",
+              "It sounds like your job is causing you a lot of stress. What aspects of your job are the most stressful?",
+              "I understand you're having problems at work. Are these problems recent, or have they been ongoing?",
+              "You mentioned you're stressed about work. Are there any specific people or situations that trigger this stress?",
+              "It sounds like you hate your job. That's a very difficult situation. What would your ideal job be like?",
+              "Dealing with difficult coworkers can be very stressful. Are there any specific behaviors that are causing you problems?",
+              "It sounds like your workload is overwhelming. Let's talk about some strategies for managing your time and tasks.",
+              "It sounds like you're burned out.  Burnout is a serious condition.  Let's explore strategies for recovery and prevention. [Link to burnout resources]",
+              "It sounds like your job is making you depressed.  It's important to address this.  Are you able to take some time away from work? [Link to depression resources]",
+              "I hear you're having trouble with your boss.  That can create a very stressful work environment.  Are you able to have an open conversation with them, or is there an HR department you can talk to? [Link to workplace conflict resolution]"
+          ]
+      },
+      {
+          "tag": "salary_stress",
+          "patterns": [
+              "salary issue",
+              "salary issues",
+              "worried about salary",
+              "underpaid",
+              "salary is too low",
+              "not getting paid enough",
+              "financial stress from work",
+              "stressed about income",
+              "i'm struggling financially",
+              "i'm worried about money",
+              "i can't pay my bills"
+          ],
+          "responses": [
+              "I understand you're worried about your salary. That's a very common concern. Are you worried about not earning enough, feeling underpaid, or something else?",
+              "Concerns about salary can definitely cause stress. Let's explore some ways to manage the anxiety around this. Have you considered looking into resources for salary negotiation?",
+              "It sounds like you're experiencing stress related to your financial situation. I can offer some techniques to help you manage the worry and explore some practical steps you might consider.",
+              "It sounds like you're not getting paid enough. That can be a very stressful situation. Have you considered talking to your employer?",
+              "I understand you're feeling financial stress from work. Let's explore some ways to manage this stress and look at potential solutions.",
+              "You mentioned you're stressed about your income. Are there any specific bills or expenses that are causing you the most worry?",
+              "It sounds like your salary is causing you a lot of stress. Are you able to talk about this with anyone else?",
+              "I hear that you're worried about your salary. This is a very common stressor. Let's work through this together.",
+              "It sounds like you're struggling financially.  There are resources that can help with financial planning and budgeting. [Link to financial resources]",
+              "I understand you're worried about money.  This is a very common source of stress.  Let's explore some techniques for managing financial anxiety. [Link to anxiety management]",
+              "It sounds like you can't pay your bills.  That's a very difficult situation.  There are resources that can help.  [Link to bill payment assistance]"
+          ]
+      },
+      {
+          "tag": "parental_stress",
+          "patterns": [
+              "parental issues",
+              "problems with parents",
+              "stressed about parents",
+              "family issues",
+              "issues with my parents",
+              "dealing with difficult parents",
+              "family conflict",
+              "stress from family",
+              "my parents are stressing me out",
+              "i'm having problems with my family",
+              "i don't get along with my parents"
+          ],
+          "responses": [
+              "It sounds like you're going through a difficult time with your parents. Family relationships can be very challenging. Can you tell me more about the specific issues you're experiencing?",
+              "I hear that you're having problems with your parents, and that can be very stressful. I want to offer you support. Are you comfortable sharing more about the situation?",
+              "Dealing with parental issues can be tough. Let's explore some ways to help you cope and find some healthy ways to manage the stress.",
+              "It sounds like you're having issues with your parents. Family dynamics can be very complicated. What's going on?",
+              "I understand you're feeling stressed about your parents. Are there any specific conflicts or disagreements?",
+              "You mentioned you're dealing with difficult parents. What makes them difficult?",
+              "It sounds like you're experiencing family conflict. This can be very stressful. Let's explore some healthy communication strategies.",
+              "I hear that you're feeling stress from your family. Family stress can be particularly challenging. I'm here to listen.",
+              "It sounds like your parents are stressing you out.  It can be tough when your parents are a source of stress.  Let's explore some coping mechanisms.",
+              "I understand you're having problems with your family.  Family problems can be very complex.  Are you looking for ways to improve communication, or manage your own stress?",
+              "It sounds like you don't get along with your parents.  That can be a source of ongoing stress.  Let's explore some strategies for managing this relationship.",
+              "When dealing with family stress, setting healthy boundaries can be helpful. [Link to information on setting boundaries]",
+              "It might be helpful to explore resources on family communication and conflict resolution. [Link to family communication resources]"
+          ]
+      },
+      {
+          "tag": "depression",
+          "patterns": [
+              "i am depressed",
+              "i'm feeling depressed",
+              "i'm in depression",
+              "i feel down",
+              "i'm feeling low",
+              "i'm sad all the time",
+              "i've lost interest in things",
+              "i feel hopeless",
+              "i feel empty",
+              "nothing makes me happy"
+          ],
+          "responses": [
+              "I understand you're feeling depressed. That can be a very difficult experience, and I want you to know that you're not alone.  It's important to acknowledge these feelings.  Would you like to tell me more about what's been happening?",
+              "It sounds like you're going through a very tough time.  I want to offer my support.  Have you been feeling like this for a while?",
+              "I hear you, and it's okay to feel down sometimes, but if it's persistent, it's important to address it.  What kind of things make you feel this way?",
+              "I sense that you're feeling depressed.  Could you describe what a typical day has been like for you recently?",
+              "I want to acknowledge that you're feeling depressed.  Can you tell me more about the specific things that are making you feel this way?",
+              "It sounds like you're carrying a heavy load.  I'm here to listen and help you find some ways to lighten it.  What would you like to talk about?",
+              "I understand you're feeling depressed.  Have you noticed any changes in your sleep or appetite?",
+              "It sounds like you're feeling low.  Have you been able to connect with friends or family?",
+              "I hear that you're sad all the time.  That can be very draining.  Let's explore some strategies, and I can provide you with some resources.",
+              "It sounds like you've lost interest in things.  That's a common symptom of depression.  Let's talk about that.",
+              "I understand you feel hopeless.  It's important to remember that things can get better, and there is help available.  Please reach out.",
+              "It sounds like you feel empty.  That's a very difficult feeling to experience.  I'm here to listen.",
+              "I hear that nothing makes you happy.  That can be a sign of a deeper issue.  I can provide you with some resources.",
+              "If you're feeling depressed, it's important to consider seeking professional help.  Here's a resource that can help you find a therapist: [Link to therapist finder]",
+              "Sometimes, gentle exercise can help lift your mood.  Even a short walk can make a difference. [Link to information on depression and exercise]"
+          ]
+      },
+      {
+          "tag": "panic_attack",
+          "patterns": [
+              "i'm having a panic attack",
+              "i feel like i'm going to die",
+              "i can't breathe",
+              "i'm freaking out",
+              "i'm feeling panicked",
+              "my heart is racing",
+              "i'm dizzy and nauseous",
+              "i'm losing control",
+              "i feel like i'm having a heart attack",
+              "i'm trembling and shaking"
+          ],
+          "responses": [
+              "I understand you're having a panic attack.  That can be very scary, but I want you to know that it will pass, and you're not alone.  Try to focus on your breathing.  I'm here to help you through this.",
+              "It sounds like you feel like you're going to die.  Panic attacks can cause very intense physical sensations, but they are not life-threatening.  Focus on your breathing, and try to stay present.",
+              "I hear that you can't breathe.  Try to take slow, deep breaths.  Inhale slowly through your nose, and exhale slowly through your mouth.  I'll stay with you.",
+              "It sounds like you're freaking out.  It's important to try to stay grounded.  Try the 5-4-3-2-1 grounding technique: Name 5 things you see, 4 things you can touch, 3 things you hear, 2 things you smell, and 1 thing you can taste.  [Link to grounding technique resource]",
+              "I understand you're feeling panicked.  Try to find a safe and quiet place, if possible.  Focus on your breathing, and remember that this will pass.",
+              "It sounds like your heart is racing.  That's a common symptom of a panic attack.  Try to slow your breathing, and focus on something calming.",
+              "I hear that you're dizzy and nauseous.  These are also symptoms of a panic attack.  Try to focus on your breathing, and the sensations will subside.",
+              "It sounds like you're losing control.  Panic attacks can make you feel this way, but you can regain control.  Focus on your breathing and try a grounding technique.",
+              "It sounds like you feel like you're having a heart attack.  While it's important to rule out any medical conditions, panic attacks can mimic heart attack symptoms.  Focus on your breathing.",
+              "I hear that you're trembling and shaking.  These are physicalsymptoms of a panic attack.  Try to focus on your breathing and find a safe space.",
+              "During a panic attack, the most important thing is to focus on your breathing.  Try this: inhale for a count of 4, hold for a count of 1, and exhale for a count of 4. [Link to breathing exercise]",
+              "Remember, a panic attack is a temporary experience.  It will pass.  Try to find a quiet space and focus on a single object to ground yourself. [Link to grounding techniques]"
+          ]
+      },
+      {
+          "tag": "fallback",
+          "patterns": [
+              "i don't understand",
+              "huh?",
+              "what?",
+              "i'm confused",
+              "can you repeat that",
+              "i didn't get that",
+              "i don't know what to say",
+              "i'm not sure what to ask",
+              "can you explain that"
+          ],
+          "responses": [
+              "I'm sorry, I didn't understand. Could you please rephrase your question, focusing on how you're feeling or any stress-related concerns?",
+              "I'm having trouble understanding. To help me understand, could you tell me more about what's on your mind?",
+              "I didn't get that. Perhaps you could phrase your question in a different way?",
+              "I am designed to help with stress. Could you tell me more about what you're experiencing?",
+              "I apologize, I'm still under development and learning to understand different ways of expressing things. Could you try saying that in a different way?",
+              "I'm not sure I followed that. Could you please provide more detail?",
+              "I'm sorry, I'm having a little trouble understanding. Could you simplify your question?",
+              "To help me understand you better, could you tell me what you expected me to say?",
+              "It sounds like you don't know what to say.  That's okay.  You can start by telling me anything that's on your mind, or how you're feeling.",
+              "It sounds like you're not sure what to ask.  Perhaps I can offer some suggestions?  Are you feeling stressed, anxious, depressed, or something else?",
+              "It sounds like you'd like me to explain something.  Could you tell me what you'd like me to explain in more detail?"
+          ]
+      }
+  ]
+}

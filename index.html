@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Chatbot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Default (Light) Theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f0fb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            transition: background-color 0.5s ease;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            transition: background-color 0.5s ease;
+            overflow: hidden;
+        }
+
+        #chat-container {
+            flex-grow: 1;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 10px;
+            transition: background-color 0.5s ease;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+        }
+
+        #chat-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #chat-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        #chat-container::-webkit-scrollbar-thumb {
+            background-color: rgba(155, 155, 155, 0.5);
+            border-radius: 20px;
+            border: transparent;
+        }
+
+        #chat-container::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(155, 155, 155, 0.7);
+        }
+
+        #user-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1c4e9;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            transition: background-color 0.5s ease, border-color 0.5s ease;
+        }
+
+        #send-button {
+            padding: 10px;
+            background-color: #e0b0ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            align-self: flex-end;
+            transition: background-color 0.5s ease;
+            display: flex; /* Use flexbox for icon alignment */
+            align-items: center;  /* Vertically center the icon */
+            justify-content: center; /* Horizontally center the icon */
+            width: 40px; /* Give it a fixed width */
+            height: 40px; /* Give it a fixed height */
+        }
+
+        #send-button:hover {
+            background-color: #b19cd9;
+        }
+
+        .message {
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            clear: both;
+            transition: background-color 0.5s ease, color 0.5s ease;
+            max-width: 80%;
+        }
+
+        .user-message {
+            background-color: #e6b3ff;
+            text-align: right;
+            margin-left: auto;
+            border-radius: 20px 4px 20px 20px;
+        }
+
+        .bot-message {
+            background-color: #66b3ff;
+            text-align: left;
+            margin-right: auto;
+            border-radius: 4px 20px 20px 20px;
+        }
+
+        .theme-switch-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+        }
+
+        .theme-switch-label {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #555;
+            transition: color 0.5s ease;
+        }
+
+        .theme-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 24px;
+        }
+
+        .theme-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            border-radius: 24px;
+            transition: .4s;
+            text-align: center;
+            line-height: 24px;
+            font-size: 16px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "☀️";
+            left: 4px;
+            bottom: 4px;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #e0b0ff;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+            content: "🌙";
+        }
+
+        /* Dark Theme Styles */
+        body.dark-mode {
+            background-color: #1a1a2e;
+        }
+
+        .container.dark-mode {
+            background-color: #2a2a3e;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        #chat-container.dark-mode {
+            background-color: #2a2a3e;
+        }
+
+        #user-input.dark-mode {
+            background-color: #31304d;
+            border-color: #4a4a64;
+            color: #eee;
+        }
+
+        #send-button.dark-mode {
+            background-color: #b19cd9;
+            color: #fff;
+        }
+
+        #send-button.dark-mode:hover {
+            background-color: #917fb8;
+        }
+
+        .message.dark-mode {
+            color: #eee;
+        }
+
+        .user-message.dark-mode {
+            background-color: #e6b3ff;
+            color: #eee;
+        }
+
+        .bot-message.dark-mode {
+            background-color: #66b3ff;
+            color: #eee;
+        }
+
+        .theme-switch-label.dark-mode {
+            color: #eee;
+        }
+        #send-button i {
+            color: #ff1a75;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch-label">Light</label>
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
+            <label class="theme-switch-label dark-mode-label">Dark</label>
+        </div>
+        <div id="chat-container">
+            <div class="message bot-message">Welcome! How can I help you today?</div>
+        </div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-button">
+            <i class="fa fa-pencil"></i>
+        </button>
+    </div>
+    <script>
+        const chatContainer = document.getElementById('chat-container');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const themeSwitch = document.getElementById('theme-switch');
+        const body = document.body;
+        const container = document.querySelector('.container');
+        const sendButtonElement = document.getElementById('send-button');
+        const themeSwitchLabel = document.querySelector('.theme-switch-label');
+
+        function sendMessage() {
+            const message = userInput.value;
+            if (message.trim() === '') return;
+            const userMessageDiv = document.createElement('div');
+            userMessageDiv.classList.add('message', 'user-message');
+            if (body.classList.contains('dark-mode')) {
+                userMessageDiv.classList.add('dark-mode');
+            }
+            userMessageDiv.textContent = message;
+            chatContainer.appendChild(userMessageDiv);
+            userInput.value = '';
+            fetch('http://127.0.0.1:5000/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: message
+                })
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const botMessageDiv = document.createElement('div');
+                    botMessageDiv.classList.add('message', 'bot-message');
+                    if (body.classList.contains('dark-mode')) {
+                        botMessageDiv.classList.add('dark-mode');
+                    }
+                    botMessageDiv.textContent = data.response;
+                    chatContainer.appendChild(botMessageDiv);
+                    chatContainer.scrollTop = chatContainer.scrollHeight;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    const errorMessageDiv = document.createElement('div');
+                    errorMessageDiv.classList.add('message', 'bot-message');
+                    if (body.classList.contains('dark-mode')) {
+                        errorMessageDiv.classList.add('dark-mode');
+                    }
+                    errorMessageDiv.textContent = "Sorry, there was an error communicating with the chatbot.";
+                    chatContainer.appendChild(errorMessageDiv);
+                    chatContainer.scrollTop = chatContainer.scrollHeight;
+                });
+        }
+
+        sendButton.addEventListener('click', sendMessage);
+        userInput.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        themeSwitch.addEventListener('change', function () {
+            if (this.checked) {
+                body.classList.add('dark-mode');
+                container.classList.add('dark-mode');
+                chatContainer.classList.add('dark-mode');
+                userInput.classList.add('dark-mode');
+                sendButtonElement.classList.add('dark-mode');
+                themeSwitchLabel.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.remove('dark-mode');
+                container.classList.remove('dark-mode');
+                chatContainer.classList.remove('dark-mode');
+                userInput.classList.remove('dark-mode');
+                sendButtonElement.classList.remove('dark-mode');
+                themeSwitchLabel.classList.remove('dark-mode');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            themeSwitch.checked = true;
+            body.classList.add('dark-mode');
+            container.classList.add('dark-mode');
+            chatContainer.classList.add('dark-mode');
+            userInput.classList.add('dark-mode');
+            sendButtonElement.classList.add('dark-mode');
+            themeSwitchLabel.classList.add('dark-mode');
+        }
+    </script>
+</body>
+</html>

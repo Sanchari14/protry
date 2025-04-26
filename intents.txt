@@ -1,0 +1,271 @@
+i want to kill myself,suicide_ideation
+thinking about ending it all,suicide_ideation
+i don't want to live anymore,suicide_ideation
+i'm considering suicide,suicide_ideation
+i'm thinking about taking my own life,suicide_ideation
+i wish i was dead,suicide_ideation
+i can't see any way out,suicide_ideation
+life isn't worth living,suicide_ideation
+i feel like i'd be better off dead,suicide_ideation
+i'm planning to end my life,suicide_ideation
+i feel like a burden to others,suicide_ideation
+i feel trapped and want to die,suicide_ideation
+is there any point to living,suicide_ideation
+what's the point of living,suicide_ideation # Added
+i don't see a way out,suicide_ideation # Added
+i just want the pain to stop,suicide_ideation # Added
+i'm done with everything,suicide_ideation # Added
+there's no escape,suicide_ideation # Added
+
+i feel so hopeless,depression
+nothing feels good anymore,depression
+i'm feeling down,depression
+i'm feeling very low,depression
+i'm feeling blue,depression
+i'm feeling sad all the time,depression
+i've lost interest in everything,depression
+i don't enjoy anything anymore,depression
+i feel empty inside,depression
+i feel numb,depression
+i'm constantly tired,depression
+i have no energy,depression
+i feel worthless,depression
+i hate myself,depression
+i can't concentrate on anything,depression
+i'm having trouble sleeping,depression
+i'm sleeping too much,depression
+i've lost my appetite,depression
+i'm eating too much,depression
+i feel like giving up,depression
+i feel like nothing matters,depression # Added
+i don't see the point in trying,depression # Added
+i just want to stay in bed,depression # Added
+it's all too much,depression # Added
+i feel so alone,depression # Added
+i can't remember the last time i was happy,depression # Added
+
+i'm having panic attacks,anxiety_panic
+i feel like i'm having a panic attack,anxiety_panic
+panic attack,anxiety_panic
+i'm experiencing a panic attack,anxiety_panic
+i had a panic attack,anxiety_panic
+my heart is racing,anxiety_panic # Added
+i can't breathe,anxiety_panic # Added
+i feel like i'm going to die,anxiety_panic # Added
+i'm trembling all over,anxiety_panic # Added
+i feel dizzy and lightheaded,anxiety_panic # Added
+
+i feel so worried all the time,anxiety_general
+i am anxious,anxiety_general
+i feel anxious,anxiety_general
+i have anxiety,anxiety_general
+i'm suffering from anxiety,anxiety_general
+i'm feeling very worried,anxiety_general
+i'm experiencing anxiety,anxiety_general
+constant worrying,anxiety_general
+i'm always on edge,anxiety_general # Added
+i can't relax,anxiety_general # Added
+i'm constantly fearing the worst,anxiety_general # Added
+i'm having trouble concentrating,anxiety_general # Added
+i feel a sense of dread,anxiety_general # Added
+i'm excessively nervous,anxiety_general # Added
+
+obsessive thoughts,ocd
+compulsive behaviors,ocd
+i have intrusive thoughts,ocd # Added
+i feel compelled to do things,ocd # Added
+i'm obsessed with cleanliness,ocd # Added
+i have repetitive rituals,ocd # Added
+i'm constantly checking things,ocd # Added
+i need things to be perfect,ocd # Added
+
+hi,greeting
+hello,greeting
+hey,greeting
+greetings,greeting # Added
+what's up,greeting # Added
+good morning,greeting # Added
+good afternoon,greeting # Added
+good evening,greeting # Added
+
+bye,farewell
+goodbye,farewell
+see you,farewell
+take care,farewell # Added
+see you later,farewell # Added
+farewell,farewell # Added
+so long,farewell # Added
+
+thank you,gratitude
+thanks,gratitude
+that's good buddy,gratitude
+thanks a lot,gratitude # Added
+i appreciate it,gratitude # Added
+i'm grateful,gratitude # Added
+you're a lifesaver,gratitude # Added
+
+stressed,feeling_stressed
+i am stressed,feeling_stressed
+i feel stressed,feeling_stressed
+i'm stressed,feeling_stressed
+feeling stressed,feeling_stressed
+so stressed,feeling_stressed
+very stressed,feeling_stressed
+extremely stressed,feeling_stressed
+totally stressed,feeling_stressed
+overwhelmed,feeling_stressed
+burdened,feeling_stressed
+under pressure,feeling_stressed
+frazzled,feeling_stressed
+on edge,feeling_stressed
+wound up,feeling_stressed
+tense,feeling_stressed
+agitated,feeling_stressed
+anxious,feeling_stressed # Added - included here as well, per feedback
+worried,feeling_stressed # Added - included here as well, per feedback
+frustrated,feeling_stressed
+irritated,feeling_stressed
+at my wit's end,feeling_stressed
+can't cope,feeling_stressed
+struggling to cope,feeling_stressed
+this is too much,feeling_stressed
+i can't handle this,feeling_stressed
+losing it,feeling_stressed
+about to snap,feeling_stressed
+stressed out,feeling_stressed
+stressed to the max,feeling_stressed
+i'm at my breaking point,feeling_stressed # Added
+i'm feeling overwhelmed,feeling_stressed # Added
+there's too much pressure,feeling_stressed # Added
+everything is too much,feeling_stressed # Added
+i'm completely drained,feeling_stressed # Added
+
+arguing with partner,relationship_stress_arguments
+constant fights with spouse,relationship_stress_arguments
+never agree with boyfriend,relationship_stress_arguments
+misunderstandings with girlfriend,relationship_stress_arguments
+tension with my significant other,relationship_stress_arguments
+we're always fighting,relationship_stress_arguments # Added
+we can't communicate,relationship_stress_arguments # Added
+we're constantly at odds,relationship_stress_arguments # Added
+we're having a lot of conflict,relationship_stress_arguments # Added
+
+breakup,relationship_stress_breakup
+just got dumped,relationship_stress_breakup
+going through a separation,relationship_stress_breakup
+heartbroken,relationship_stress_breakup
+feeling lost after breakup,relationship_stress_breakup
+i got broken up with,relationship_stress_breakup # Added
+i'm dealing with a breakup,relationship_stress_breakup # Added
+it's over,relationship_breakup # Added
+
+family issues,family_stress
+arguing with parents,family_stress
+sibling conflict,family_stress
+feeling misunderstood by family,family_stress
+there's conflict at home,family_stress # Added
+i'm having problems with my family,family_stress # Added
+my family is stressing me out,family_stress # Added
+
+work overload,job_stress_overload
+too much work,job_stress_overload
+unmanageable workload,job_stress_overload
+deadlines stressing me out,job_stress_deadlines
+pressure at work,job_stress_pressure
+boss is demanding,job_stress_boss
+toxic work environment,job_stress_environment
+i'm swamped with work,job_stress_overload # Added
+i have too many deadlines,job_stress_deadlines # Added
+my boss is making my life difficult,job_stress_boss # Added
+
+fear of losing my job,job_security_stress
+unemployment stress,job_security_stress
+job search anxiety,job_security_stress
+i'm worried about getting fired,job_security_stress # Added
+i'm stressed about my job security,job_security_stress # Added
+i'm anxious about finding a job,job_security_stress # Added
+
+exam anxiety,study_stress_exams
+test stress,study_stress_exams
+feeling unprepared for exams,study_stress_exams
+assignment stress,study_stress_assignments
+project deadline stress,study_stress_assignments
+i'm stressed about my exams,study_stress_exams # Added
+i'm worried about failing my test,study_stress_exams # Added
+i have a lot of assignments due,study_stress_assignments # Added
+
+struggling with studies,study_difficulty_stress
+not understanding the material,study_difficulty_stress
+fear of failure in exams,study_failure_stress
+i'm having trouble with my studies,study_difficulty_stress # Added
+i don't understand this material,study_difficulty_stress # Added
+i'm afraid i'm going to fail,study_failure_stress # Added
+
+procrastination stress,study_management_stress
+time management issues with studies,study_management_stress
+i keep putting off studying,study_management_stress # Added
+i'm struggling to manage my time,study_management_stress # Added
+i'm overwhelmed with schoolwork,study_management_stress # Added
+
+worried about money,financial_stress_general
+debt is overwhelming,financial_stress_debt
+can't pay bills,financial_stress_bills
+job loss affecting finances,financial_stress_jobloss
+financial insecurity,financial_stress_insecurity
+budgeting stress,financial_stress_budgeting
+i'm stressed about money,financial_stress_general # Added
+i'm struggling with debt,financial_stress_debt # Added
+i can't afford my bills,financial_stress_bills # Added
+
+fear of social situations,social_anxiety_general
+nervous in crowds,social_anxiety_crowds
+anxious about meeting new people,social_anxiety_newpeople
+fear of public speaking,social_anxiety_speaking
+worried about being judged,social_anxiety_judgment
+awkward in social settings,social_anxiety_awkwardness
+i'm afraid of social situations,social_anxiety_general # Added
+i get nervous around people,social_anxiety_general # Added
+i'm uncomfortable in crowds,social_anxiety_crowds # Added
+
+worried about getting sick,health_anxiety_illness
+fear of serious illness,health_anxiety_seriousillness
+anxious about symptoms,health_anxiety_symptoms
+constant worry about health,health_anxiety_general
+i'm worried about my health,health_anxiety_general # Added
+i'm afraid of getting a serious disease,health_anxiety_seriousillness # Added
+i'm constantly checking for symptoms,health_anxiety_symptoms # Added
+
+feeling depressed,depression # Added - included here as well, per feedback.
+low mood,depression
+loss of interest,depression
+
+feeling anxious,anxiety_general #Consolidated
+constant worrying,anxiety_general #Consolidated
+
+obsessive thoughts,ocd
+compulsive behaviors,ocd
+
+worried about the future,global_stress_future
+stressed about the environment,global_stress_environment
+anxious about the political situation,global_stress_politics
+fear of war,global_stress_war
+impact of news on my mental health,global_stress_news
+i'm worried about what the future holds,global_stress_future
+the state of the world is stressing me out,global_stress_environment
+i'm anxious about the election,global_stress_politics
+
+gender identity issues,gender_stress
+sexuality stress,sexuality_stress
+feeling different,identity_stress
+questioning my identity,identity_stress
+i'm struggling with my gender identity,gender_stress
+i'm confused about my sexuality,sexuality_stress
+i feel like i don't fit in,identity_stress
+
+feeling lost in life,existential_stress
+questioning my purpose,existential_stress
+feeling meaningless,existential_stress
+worried about death,existential_stress
+i don't know what to do with my life,existential_stress
+what's the meaning of life,existential_stress
+i feel like my life has no purpose,existential_stress
